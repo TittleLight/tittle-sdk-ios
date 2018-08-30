@@ -32,6 +32,8 @@
 		8CC706732137D32C00C59FEA /* HelloLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CC706712137D32C00C59FEA /* HelloLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CC706742137D32C00C59FEA /* HelloLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC706722137D32C00C59FEA /* HelloLogger.m */; };
 		8CC706A42137E31900C59FEA /* FunctionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC706A32137E31900C59FEA /* FunctionsTableViewController.swift */; };
+		8CC706AB2137EB0600C59FEA /* TittleLightControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CC706A92137EB0600C59FEA /* TittleLightControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CC706AC2137EB0600C59FEA /* TittleLightControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC706AA2137EB0600C59FEA /* TittleLightControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		8CC706712137D32C00C59FEA /* HelloLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloLogger.h; sourceTree = "<group>"; };
 		8CC706722137D32C00C59FEA /* HelloLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloLogger.m; sourceTree = "<group>"; };
 		8CC706A32137E31900C59FEA /* FunctionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsTableViewController.swift; sourceTree = "<group>"; };
+		8CC706A92137EB0600C59FEA /* TittleLightControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TittleLightControl.h; sourceTree = "<group>"; };
+		8CC706AA2137EB0600C59FEA /* TittleLightControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TittleLightControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 				8CC706672137D2C900C59FEA /* Info.plist */,
 				8CC706712137D32C00C59FEA /* HelloLogger.h */,
 				8CC706722137D32C00C59FEA /* HelloLogger.m */,
+				8CC706A92137EB0600C59FEA /* TittleLightControl.h */,
+				8CC706AA2137EB0600C59FEA /* TittleLightControl.m */,
 			);
 			path = TittleFramework;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC706682137D2C900C59FEA /* TittleFramework.h in Headers */,
+				8CC706AB2137EB0600C59FEA /* TittleLightControl.h in Headers */,
 				8CC706732137D32C00C59FEA /* HelloLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC706AC2137EB0600C59FEA /* TittleLightControl.m in Sources */,
 				8CC706742137D32C00C59FEA /* HelloLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
