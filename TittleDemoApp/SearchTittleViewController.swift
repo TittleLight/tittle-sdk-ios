@@ -9,14 +9,18 @@
 import UIKit
 import TittleFramework
 
-class SearchTittleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SearchTittleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GCDAsyncSocketDelegate {
     
+    // init TittleLightControl
+    let tittleLightCtrl = TittleLightControl()
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var tittleListTableView: UITableView!
     
     var tittles: [String] = ["192.168.31.142"]
     let cellReuseIdentifier = "tittleCell"
+    
+    var isSearching:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,10 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
     
     
@@ -49,6 +57,9 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tittleLightCtrl.stopSearchingTittles(inController: self)
+        isSearching = false
+        searchButton.setTitle("Start Search", for: .normal)
         self.performSegue(withIdentifier: "ToFunctionPage", sender: self)
     }
     
@@ -56,7 +67,7 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
      // MARK: - segue
      */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        
         if segue.identifier == "ToFunctionPage" {
             let destinationVC = segue.destination as! FunctionsTableViewController
             let indexPath = self.tittleListTableView.indexPathForSelectedRow
@@ -69,6 +80,29 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
      */
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
+        if isSearching {
+            tittleLightCtrl.stopSearchingTittles(inController: self)
+            isSearching = false
+            searchButton.setTitle("Start Search", for: .normal)
+        }else {
+            tittleLightCtrl.startSearchingTittles(inController: self)
+            isSearching = true
+            searchButton.setTitle("Stop Search", for: .normal)
+        }
+        
+    }
+    
+    /*
+     // MARK: - Socket delegate
+     */
+    func socket(_ sock: GCDAsyncSocket, didAcceptNewSocket newSocket:GCDAsyncSocket ) {
+        newSocket.readData(withTimeout: -1, tag: 55);
+    }
+    
+    func socket(_ sock:GCDAsyncSocket, didRead data:Data, withTag tag:Int) {
+        
+        //        [self updateMapping:sock data:data];
+        //        [self removeSockInPool:sock];
     }
     
 }

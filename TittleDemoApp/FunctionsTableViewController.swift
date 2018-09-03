@@ -36,6 +36,11 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        tittleLightCtrl.disconnectTittleWithController()
+    }
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {

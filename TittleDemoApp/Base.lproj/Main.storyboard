@@ -233,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CSo-xc-ADN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="488"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="445"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tittleCell" rowHeight="61" id="EKu-Kq-6Hw" customClass="TittleListCellTableViewCell" customModule="TittleDemoApp" customModuleProvider="target">
@@ -263,18 +263,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure your phone and the Tittles are connecting to the same wifi " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f4-sH-rrC">
-                                <rect key="frame" x="20" y="560" width="335" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="mtZ-iG-C7f"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cf-Bg-4I8">
-                                <rect key="frame" x="0.0" y="628" width="375" height="39"/>
+                                <rect key="frame" x="0.0" y="597" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bvq-vu-vKF"/>
+                                </constraints>
                                 <state key="normal" title="Start Search">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -282,20 +276,28 @@
                                     <action selector="searchButtonPressed:" destination="kTq-J3-nLA" eventType="touchUpInside" id="Uiq-ej-QZs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure your phone and the Tittles are connecting to the same wifi " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f4-sH-rrC">
+                                <rect key="frame" x="20" y="519" width="335" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="mtZ-iG-C7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0cf-Bg-4I8" firstAttribute="leading" secondItem="Yxn-wV-n7Q" secondAttribute="leading" id="5EW-lg-SIM"/>
+                            <constraint firstItem="4f4-sH-rrC" firstAttribute="top" secondItem="CSo-xc-ADN" secondAttribute="bottom" constant="10" id="6Mo-YQ-q6e"/>
                             <constraint firstItem="CSo-xc-ADN" firstAttribute="leading" secondItem="Yxn-wV-n7Q" secondAttribute="leading" id="7pV-4U-5hO"/>
+                            <constraint firstItem="0cf-Bg-4I8" firstAttribute="top" secondItem="4f4-sH-rrC" secondAttribute="bottom" constant="10" id="87R-e8-OYx"/>
                             <constraint firstItem="Yxn-wV-n7Q" firstAttribute="trailing" secondItem="CSo-xc-ADN" secondAttribute="trailing" id="9kk-kA-MRn"/>
-                            <constraint firstItem="Yxn-wV-n7Q" firstAttribute="bottom" secondItem="CSo-xc-ADN" secondAttribute="bottom" constant="115" id="NWh-1h-yzs"/>
-                            <constraint firstItem="Yxn-wV-n7Q" firstAttribute="bottom" secondItem="0cf-Bg-4I8" secondAttribute="bottom" id="c3T-Fg-413"/>
+                            <constraint firstItem="Yxn-wV-n7Q" firstAttribute="bottom" secondItem="0cf-Bg-4I8" secondAttribute="bottom" constant="20" id="c3T-Fg-413"/>
                             <constraint firstItem="Yxn-wV-n7Q" firstAttribute="trailing" secondItem="0cf-Bg-4I8" secondAttribute="trailing" id="ciA-hb-wIi"/>
                             <constraint firstItem="CSo-xc-ADN" firstAttribute="top" secondItem="Yxn-wV-n7Q" secondAttribute="top" id="f1U-m7-6jd"/>
                             <constraint firstItem="Yxn-wV-n7Q" firstAttribute="trailing" secondItem="4f4-sH-rrC" secondAttribute="trailing" constant="20" id="kNt-ch-b08"/>
-                            <constraint firstItem="0cf-Bg-4I8" firstAttribute="top" secondItem="4f4-sH-rrC" secondAttribute="bottom" id="ppf-O5-HXA"/>
                             <constraint firstItem="4f4-sH-rrC" firstAttribute="leading" secondItem="Yxn-wV-n7Q" secondAttribute="leading" constant="20" id="rYM-j8-g2f"/>
-                            <constraint firstItem="4f4-sH-rrC" firstAttribute="top" secondItem="CSo-xc-ADN" secondAttribute="bottom" constant="8" id="uVM-3R-lOi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yxn-wV-n7Q"/>
                     </view>
