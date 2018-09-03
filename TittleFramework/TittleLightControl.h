@@ -10,4 +10,5 @@
 
 @interface TittleLightControl : NSObject
 - (NSData *) lightModePackageWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity;
+- (UInt16) defaultSocketPort;
 @end
