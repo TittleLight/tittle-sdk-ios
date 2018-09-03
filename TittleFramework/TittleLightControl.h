@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface TittleLightControl : NSObject
-- (void) lightModeWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity;
+- (NSData *) lightModePackageWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity;
 @end

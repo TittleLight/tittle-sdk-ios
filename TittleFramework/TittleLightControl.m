@@ -18,7 +18,7 @@
 // Color - RGB values
 // Intensity - int value from 0 to 255
 // No value checking here
-- (void) lightModeWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity {
+- (NSData *) lightModePackageWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity {
     
     char command[COMMAND_LIGHT_LENGTH];
     command[0] = 0x10; //Header
@@ -28,10 +28,8 @@
     command[4] = intensity;
     command[5] = 0x0d; //tail
     command[6] = 0x0a; //tail
-    
-    NSData *data = [[NSData alloc] initWithBytes:&command length:COMMAND_LIGHT_LENGTH];
-    NSLog(@"send light -- %@", data);
-    //    [self initCommandTimer: data];
+
+    return [[NSData alloc] initWithBytes:&command length:COMMAND_LIGHT_LENGTH];
     
 }
 

@@ -103,30 +103,35 @@ class FunctionsTableViewController: UITableViewController {
     
     // MARK: - Button Actions
     @IBAction func changeColorButtonDidPressed(_ sender: UIButton) {
-        setLightMode()
+        setLightMode(isOn: true)
     }
     
     @IBAction func changeIntensityButtonPressed(_ sender: UIButton) {
-        setLightMode()
+        setLightMode(isOn: true)
     }
     
     @IBAction func lightSwitchValueChanged(_ sender: UISwitch) {
-        if sender.isOn {
-            setLightMode()
-        }else {
-            let lightModeCtrl = TittleLightControl()
-            lightModeCtrl.lightMode(withR: 0, g: 0, b: 0, intensity: 0)
-        }
+        setLightMode(isOn: sender.isOn)
     }
     
-    // MAEK - Tittle SDK
-    func setLightMode() {
-        let colorR: Int32! = Int32(colorRTextField.text!) ?? 0
-        let colorG: Int32! = Int32(colorGTextField.text!) ?? 0
-        let colorB: Int32! = Int32(colorBTextField.text!) ?? 0
-        let intensity: Int32! = Int32(intensityTextField.text!) ?? 0
+    // MARK -
+    func setLightMode(isOn: Bool!) {
+      
+        // get color RGB and intensity from text fields ot set to switch off
+        let colorR: Int32! = isOn ? Int32(colorRTextField.text!) ?? 0 : 0
+        let colorG: Int32! = isOn ? Int32(colorGTextField.text!) ?? 0 : 0
+        let colorB: Int32! = isOn ? Int32(colorBTextField.text!) ?? 0 : 0
+        let intensity: Int32! = isOn ? Int32(intensityTextField.text!) ?? 0 : 0
+        
+        // init TittleLightControl
         let lightModeCtrl = TittleLightControl()
-        lightModeCtrl.lightMode(withR: colorR, g: colorG, b: colorB, intensity: intensity)
+        // Using Tittle SDK to prepare the data package
+        let lightModePackage: Data! = lightModeCtrl.lightModePackage(withR: colorR, g: colorG, b: colorB, intensity: intensity)
+        print(lightModePackage! as NSData)
+        
+        // Send the package to Tittle Light via TCP socket
+        
+        
     }
     
     
