@@ -14,7 +14,7 @@
 // Color - RGB values
 // Intensity - int value from 0 to 255
 // No value checking here
-- (NSData *) lightModePackageWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity {
+- (void) setLightModeInController: (id)controller R: (int)r G:(int)g B:(int)b intensity: (int)intensity {
     
     char command[TITTLE_COMMAND_LIGHT_LENGTH];
     command[0] = 0x10; //Header
@@ -25,12 +25,22 @@
     command[5] = 0x0d; //tail
     command[6] = 0x0a; //tail
     
-    return [[NSData alloc] initWithBytes:&command length:TITTLE_COMMAND_LIGHT_LENGTH];
+    NSData *data =  [[NSData alloc] initWithBytes:&command length:TITTLE_COMMAND_LIGHT_LENGTH];
     
+    [self.socketConnection writeData: data withTag: TITTLE_COMMAND_LIGHT_MODE withController: controller];
 }
 
-- (UInt16) defaultSocketPort {
-    return TITTLE_DEFAULT_SOCKET_PORT;
+//- (UInt16) defaultSocketPort {
+//    return TITTLE_DEFAULT_SOCKET_PORT;
+//}
+
+- (void) connectTittleWithController: (id)controller ip: (NSString *)ip {
+    if (self.socketConnection != nil) {
+        [self.socketConnection disconnect];
+        self.socketConnection = nil;
+    }
+    self.socketConnection = [[SocketConnection alloc] init];
+    [self.socketConnection connect:controller ip:ip port:TITTLE_DEFAULT_SOCKET_PORT];
 }
 
 - (int) getAckCodeFromData:(NSData *)data {

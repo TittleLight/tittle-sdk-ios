@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "constants.h"
+#import "SocketConnection.h"
 
 @interface TittleLightControl : NSObject
-- (NSData *) lightModePackageWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity;
-- (UInt16) defaultSocketPort;
-- (int) getAckCodeFromData:(NSData *)data;
+
+@property (strong, nonatomic) SocketConnection *socketConnection;
+
+- (void) setLightModeInController: (id)controller R: (int)r G:(int)g B:(int)b intensity: (int)intensity;
+- (void) connectTittleWithController: (id)controller ip: (NSString *)ip;
+- (int)getAckCodeFromData:(NSData *)data;
 @end
