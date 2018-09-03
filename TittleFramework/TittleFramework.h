@@ -16,5 +16,6 @@ FOUNDATION_EXPORT const unsigned char TittleFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TittleFramework/PublicHeader.h>
 
+#import <TittleFramework/constants.h>
 #import <TittleFramework/HelloLogger.h>
 #import <TittleFramework/TittleLightControl.h>

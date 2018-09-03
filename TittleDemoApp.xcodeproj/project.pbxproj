@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		8C9CDF28213CEF5900AF8A92 /* constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9CDF27213CEF5900AF8A92 /* constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CC7064E2137D23C00C59FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC7064D2137D23C00C59FEA /* AppDelegate.swift */; };
 		8CC706532137D23C00C59FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC706512137D23C00C59FEA /* Main.storyboard */; };
 		8CC706552137D23C00C59FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC706542137D23C00C59FEA /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		1731F632F1CFBB7A98939A70 /* Pods-TittleDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TittleDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TittleDemoApp/Pods-TittleDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		681B1CF0B42AFA59EA3EBECD /* Pods_TittleDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TittleDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9CDF27213CEF5900AF8A92 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		8CC7064A2137D23C00C59FEA /* TittleDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TittleDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC7064D2137D23C00C59FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC706522137D23C00C59FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				8CC706722137D32C00C59FEA /* HelloLogger.m */,
 				8CC706A92137EB0600C59FEA /* TittleLightControl.h */,
 				8CC706AA2137EB0600C59FEA /* TittleLightControl.m */,
+				8C9CDF27213CEF5900AF8A92 /* constants.h */,
 			);
 			path = TittleFramework;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC706682137D2C900C59FEA /* TittleFramework.h in Headers */,
+				8C9CDF28213CEF5900AF8A92 /* constants.h in Headers */,
 				8CC706AB2137EB0600C59FEA /* TittleLightControl.h in Headers */,
 				8CC706732137D32C00C59FEA /* HelloLogger.h in Headers */,
 			);
@@ -306,15 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TittleDemoApp-checkManifestLockResult.txt",
 			);
@@ -328,15 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TittleDemoApp/Pods-TittleDemoApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 			);

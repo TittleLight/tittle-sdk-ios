@@ -10,17 +10,13 @@
 
 @implementation TittleLightControl
 
-
-#define COMMAND_LIGHT_LENGTH 7
-#define DEFAULT_SOCKET_PORT 9999
-
 // Set color and intensity of light mode
 // Color - RGB values
 // Intensity - int value from 0 to 255
 // No value checking here
 - (NSData *) lightModePackageWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity {
     
-    char command[COMMAND_LIGHT_LENGTH];
+    char command[TITTLE_COMMAND_LIGHT_LENGTH];
     command[0] = 0x10; //Header
     command[1] = r;    //RGB-R
     command[2] = g;    //RGB-G
@@ -29,12 +25,35 @@
     command[5] = 0x0d; //tail
     command[6] = 0x0a; //tail
     
-    return [[NSData alloc] initWithBytes:&command length:COMMAND_LIGHT_LENGTH];
+    return [[NSData alloc] initWithBytes:&command length:TITTLE_COMMAND_LIGHT_LENGTH];
     
 }
 
 - (UInt16) defaultSocketPort {
-    return DEFAULT_SOCKET_PORT;
+    return TITTLE_DEFAULT_SOCKET_PORT;
+}
+
+- (int) getAckCodeFromData:(NSData *)data {
+    char dataBytes[data.length];
+    
+    [data getBytes:dataBytes length:data.length];
+    
+    if (dataBytes[3] == 0x00) {
+        return TITTLE_ACK_SUCCESS;
+    }else if (dataBytes[3] == 0x01 && dataBytes[4] == 0x00) {
+        return TITTLE_ACK_RESEND;
+    }else if (dataBytes[3] == 0x01 && dataBytes[4] == 0x01) {
+        return TITTLE_ACK_READY_FOR_DATA;
+    }
+    
+    if (dataBytes[0] == 0x00  && dataBytes[1] == 0x00) {
+        return TITTLE_ACK_SUCCESS;
+    }else if (dataBytes[0] == 0x00  && dataBytes[1] == 0x01 && dataBytes[2] == 0x00) {
+        return TITTLE_ACK_RESEND;
+    }else if (dataBytes[0] == 0x00  && dataBytes[1] == 0x01 && dataBytes[2] == 0x01) {
+        return TITTLE_ACK_READY_FOR_DATA;
+    }
+    return TITTLE_ACK_UNKNOWN;
 }
 
 @end

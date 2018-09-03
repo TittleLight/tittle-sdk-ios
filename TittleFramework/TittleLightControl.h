@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "constants.h"
 
 @interface TittleLightControl : NSObject
 - (NSData *) lightModePackageWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity;
 - (UInt16) defaultSocketPort;
+- (int) getAckCodeFromData:(NSData *)data;
 @end
