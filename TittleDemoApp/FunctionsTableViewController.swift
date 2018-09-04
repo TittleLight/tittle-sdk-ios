@@ -9,10 +9,9 @@
 import UIKit
 import TittleFramework
 // TittleFramework is using CocoaAsyncSocket for socket connections.
-// So your controller needs to implement GCDAsyncSocketDelegate
 
 
-class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegate {
+class FunctionsTableViewController: UITableViewController, TittleLightControlDelegate {    
     
     @IBOutlet weak var colorRTextField: UITextField!
     @IBOutlet weak var colorGTextField: UITextField!
@@ -30,6 +29,9 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
         
+        // delegate of TittleLightControl
+        tittleLightCtrl.delegate = self
+        
         statusLabel.text = "Connecting Tittle"
         connectToTittle(ip: serverIP!)
     }
@@ -41,7 +43,7 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        tittleLightCtrl.disconnectTittleWithController()
+        tittleLightCtrl.disconnectTittle()
     }
     
     @objc func dismissKeyboard() {
@@ -75,7 +77,7 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
     
     // MARK: Tittle framework
     func connectToTittle(ip: String) {
-        tittleLightCtrl.connectTittle(withController: self, ip: ip)
+        tittleLightCtrl.connectTittle(withIP: ip)
     }
     
     func setLightMode(isOn: Bool!) {
@@ -88,11 +90,11 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
         
         statusLabel.text = "sending data"
         // Using Tittle SDK to send the data
-        tittleLightCtrl.setLightModeInController(self, r: colorR, g: colorG, b: colorB, intensity: intensity)
+        tittleLightCtrl.setLightModeWithR(colorR, g: colorG, b: colorB, intensity: intensity)
     }
     
     
-    // MARK: GCDAsyncSocketDelegate
+    // MARK: TittleLightControl delegate
     
     func socket(_ sock:GCDAsyncSocket, didConnectToHost host:String, port:UInt16) {
         DispatchQueue.main.async{
@@ -107,23 +109,18 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
     }
     
     
-    func socket(_ sock:GCDAsyncSocket, didRead data:Data, withTag tag:Int) {
-        //                print("received data - ", data as NSData)
-        let ackCode = tittleLightCtrl.getAckCode(from: data);
-        if (tag == TITTLE_COMMAND_LIGHT_MODE) {
-            if (ackCode != TITTLE_ACK_SUCCESS) {
-                DispatchQueue.main.async{
-                    self.setLightMode(isOn: true)
-                    self.statusLabel.text = "Re-sending data to Tittle"
-                }
-            }else {
-                DispatchQueue.main.async{
-                    self.statusLabel.text = "Received data from Tittle"
-                }
+    func didReceivedResponsed(fromLightMode ackCode: Int32) {
+        if (ackCode != TITTLE_ACK_SUCCESS) {
+            DispatchQueue.main.async{
+                self.setLightMode(isOn: true)
+                self.statusLabel.text = "Re-sending data to Tittle"
+            }
+        }else {
+            DispatchQueue.main.async{
+                self.statusLabel.text = "Received data from Tittle"
             }
         }
     }
-    
     
     
 }

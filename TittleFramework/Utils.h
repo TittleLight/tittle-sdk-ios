@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "constants.h"
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 
@@ -14,4 +15,5 @@
 + (NSString *)getIPAddress;
 + (NSString *)getBroadcastAddress;
 + (int)byteToInt:(char)byte;
++ (int) getAckCodeFromData:(NSData *)data;
 @end

@@ -81,7 +81,29 @@
     }else {
         return byte;
     }
+}
+
++ (int) getAckCodeFromData:(NSData *)data {
+    char dataBytes[data.length];
     
+    [data getBytes:dataBytes length:data.length];
+    
+    if (dataBytes[3] == 0x00) {
+        return TITTLE_ACK_SUCCESS;
+    }else if (dataBytes[3] == 0x01 && dataBytes[4] == 0x00) {
+        return TITTLE_ACK_RESEND;
+    }else if (dataBytes[3] == 0x01 && dataBytes[4] == 0x01) {
+        return TITTLE_ACK_READY_FOR_DATA;
+    }
+    
+    if (dataBytes[0] == 0x00  && dataBytes[1] == 0x00) {
+        return TITTLE_ACK_SUCCESS;
+    }else if (dataBytes[0] == 0x00  && dataBytes[1] == 0x01 && dataBytes[2] == 0x00) {
+        return TITTLE_ACK_RESEND;
+    }else if (dataBytes[0] == 0x00  && dataBytes[1] == 0x01 && dataBytes[2] == 0x01) {
+        return TITTLE_ACK_READY_FOR_DATA;
+    }
+    return TITTLE_ACK_UNKNOWN;
 }
 
 

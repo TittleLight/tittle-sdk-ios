@@ -62,7 +62,7 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tittleLightCtrl.stopSearchingTittles(inController: self)
+        tittleLightCtrl.stopSearchingTittles()
         isSearching = false
         searchButton.setTitle("Start Search", for: .normal)
         self.performSegue(withIdentifier: "ToFunctionPage", sender: self)
@@ -87,11 +87,11 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         if isSearching {
-            tittleLightCtrl.stopSearchingTittles(inController: self)
+            tittleLightCtrl.stopSearchingTittles()
             isSearching = false
             searchButton.setTitle("Start Search", for: .normal)
         }else {
-            tittleLightCtrl.startSearchingTittles(inController: self)
+            tittleLightCtrl.startSearchingTittles()
             isSearching = true
             searchButton.setTitle("Stop Search", for: .normal)
         }
