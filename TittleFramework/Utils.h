@@ -13,4 +13,5 @@
 @interface Utils : NSObject
 + (NSString *)getIPAddress;
 + (NSString *)getBroadcastAddress;
++ (int)byteToInt:(char)byte;
 @end

@@ -26,6 +26,9 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FunctionsTableViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
         
         statusLabel.text = "Connecting Tittle"
         connectToTittle(ip: serverIP!)
@@ -39,6 +42,10 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         tittleLightCtrl.disconnectTittleWithController()
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     // MARK: - Table view data source
@@ -101,7 +108,7 @@ class FunctionsTableViewController: UITableViewController, GCDAsyncSocketDelegat
     
     
     func socket(_ sock:GCDAsyncSocket, didRead data:Data, withTag tag:Int) {
-        //        print("received data - ", data as NSData)
+        //                print("received data - ", data as NSData)
         let ackCode = tittleLightCtrl.getAckCode(from: data);
         if (tag == TITTLE_COMMAND_LIGHT_MODE) {
             if (ackCode != TITTLE_ACK_SUCCESS) {

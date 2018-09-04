@@ -9,7 +9,7 @@
 import UIKit
 import TittleFramework
 
-class SearchTittleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GCDAsyncSocketDelegate {
+class SearchTittleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TittleLightControlDelegate {
     
     // init TittleLightControl
     let tittleLightCtrl = TittleLightControl()
@@ -17,15 +17,19 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var tittleListTableView: UITableView!
     
-    var tittles: [String] = ["192.168.31.142"]
+    var tittles: [TittleData] = []
     let cellReuseIdentifier = "tittleCell"
     
     var isSearching:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tittleListTableView.delegate = self
         tittleListTableView.dataSource = self
+        
+        // delegate of TittleLightControl
+        tittleLightCtrl.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,7 +55,8 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
         let cell:TittleListCellTableViewCell = (self.tittleListTableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! TittleListCellTableViewCell?)!
         
         // set the text from the data model
-        cell.nameLabel?.text = self.tittles[indexPath.row]
+        let tittle = self.tittles[(indexPath.row)]
+        cell.nameLabel?.text = tittle.name
         
         return cell
     }
@@ -71,7 +76,8 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
         if segue.identifier == "ToFunctionPage" {
             let destinationVC = segue.destination as! FunctionsTableViewController
             let indexPath = self.tittleListTableView.indexPathForSelectedRow
-            destinationVC.serverIP = self.tittles[(indexPath?.row)!]
+            let tittle = self.tittles[(indexPath?.row)!]
+            destinationVC.serverIP = tittle.ip
         }
     }
     
@@ -93,16 +99,13 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     /*
-     // MARK: - Socket delegate
+     // MARK: - TIttleLightControl delegate
      */
-    func socket(_ sock: GCDAsyncSocket, didAcceptNewSocket newSocket:GCDAsyncSocket ) {
-        newSocket.readData(withTimeout: -1, tag: 55);
-    }
-    
-    func socket(_ sock:GCDAsyncSocket, didRead data:Data, withTag tag:Int) {
-        
-        //        [self updateMapping:sock data:data];
-        //        [self removeSockInPool:sock];
+    func receivedNewTittle(_ tittle: TittleData?) {
+        if tittle != nil {
+            self.tittles.append(tittle!)
+            self.tittleListTableView.reloadData()
+        }
     }
     
 }

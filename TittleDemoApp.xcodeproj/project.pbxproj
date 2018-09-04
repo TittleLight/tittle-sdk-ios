@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		8C170747213E3F31004D52C0 /* TittleData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C170745213E3F31004D52C0 /* TittleData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C170748213E3F31004D52C0 /* TittleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C170746213E3F31004D52C0 /* TittleData.m */; };
 		8C7D0525213D0AF9008F581E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D0521213D0AF9008F581E /* GCDAsyncSocket.m */; };
 		8C7D0526213D0AF9008F581E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D0522213D0AF9008F581E /* GCDAsyncUdpSocket.m */; };
 		8C7D0527213D0AF9008F581E /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D0523213D0AF9008F581E /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -83,6 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C170745213E3F31004D52C0 /* TittleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TittleData.h; sourceTree = "<group>"; };
+		8C170746213E3F31004D52C0 /* TittleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TittleData.m; sourceTree = "<group>"; };
 		8C7D0521213D0AF9008F581E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		8C7D0522213D0AF9008F581E /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		8C7D0523213D0AF9008F581E /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 				8C7D053A213D34D9008F581E /* Utils.m */,
 				8C7D053D213D38BD008F581E /* ByteDataCreator.h */,
 				8C7D053E213D38BD008F581E /* ByteDataCreator.m */,
+				8C170745213E3F31004D52C0 /* TittleData.h */,
+				8C170746213E3F31004D52C0 /* TittleData.m */,
 			);
 			path = TittleFramework;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				8C7D053F213D38BD008F581E /* ByteDataCreator.h in Headers */,
 				8C7D053B213D34D9008F581E /* Utils.h in Headers */,
 				8CC706AB2137EB0600C59FEA /* TittleLightControl.h in Headers */,
+				8C170747213E3F31004D52C0 /* TittleData.h in Headers */,
 				8C7D0543213D3AF0008F581E /* UDPSocketConnection.h in Headers */,
 				8CC706732137D32C00C59FEA /* HelloLogger.h in Headers */,
 			);
@@ -360,6 +367,7 @@
 				8C7D053C213D34D9008F581E /* Utils.m in Sources */,
 				8CC706AC2137EB0600C59FEA /* TittleLightControl.m in Sources */,
 				8CC706742137D32C00C59FEA /* HelloLogger.m in Sources */,
+				8C170748213E3F31004D52C0 /* TittleData.m in Sources */,
 				8C7D0540213D38BD008F581E /* ByteDataCreator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -74,5 +74,15 @@
     return broadcastAddr;
 }
 
++ (int)byteToInt:(char)byte {
+    
+    if ((int)byte < 0) {
+        return (int)byte + 256;
+    }else {
+        return byte;
+    }
+    
+}
+
 
 @end

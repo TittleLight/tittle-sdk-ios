@@ -39,7 +39,7 @@
 
 
 -(void)writeData:(NSData *)data host:(NSString *)host port:(uint16_t)port tag:(int)tag controller:(id)controller {
-    NSLog(@"send UDP package -%@ - %d",host, port);
+    //    NSLog(@"send UDP package -%@ - %d",host, port);
     
     [udpSocket sendData:data toHost:host port:port withTimeout:-1 tag:tag];
 }
