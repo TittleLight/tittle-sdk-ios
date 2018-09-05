@@ -48,12 +48,8 @@ class StandardConfigViewController: UIViewController, TittleLightControlDelegate
     }
     
     func configTittle() {
-        //        let wifiName:String = wifiNameTextField.text!
-        //        let password:String = passwordTextField.text!
-        //        let wifiName:String = "MayTheForceBeWithYou"
-        //        let password:String = "WhySoSerious"
-        let wifiName:String = "6jhome"
-        let password:String = "13714886339"
+        let wifiName:String = wifiNameTextField.text!
+        let password:String = passwordTextField.text!
         tittleLightCtrl.standardConfig(wifiName, password: password)
     }
     
