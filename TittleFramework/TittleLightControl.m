@@ -264,7 +264,11 @@
 // Color - RGB values
 // Intensity - int value from 0 to 255
 // No value checking here
-- (void) setLightModeWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity {
+//- (void) setLightModeWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity {
+//    [self.socketConnection writeData: [ByteDataCreator lightCommandWithR:r G:g B:b intensity:intensity] withTag: TITTLE_COMMAND_LIGHT_MODE withController: self];
+//}
+
+- (void) lightModeWithR: (uint8_t)r g:(uint8_t)g b:(uint8_t)b intensity: (uint8_t)intensity {
     [self.socketConnection writeData: [ByteDataCreator lightCommandWithR:r G:g B:b intensity:intensity] withTag: TITTLE_COMMAND_LIGHT_MODE withController: self];
 }
 

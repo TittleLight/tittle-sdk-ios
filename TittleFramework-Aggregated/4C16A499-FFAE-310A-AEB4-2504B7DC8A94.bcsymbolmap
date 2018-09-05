@@ -788,106 +788,106 @@ ___25-[GCDAsyncSocket dealloc]_block_invoke
 +[GCDAsyncSocket socketFromConnectedSocketFD:delegate:delegateQueue:error:]
 +[GCDAsyncSocket socketFromConnectedSocketFD:delegate:delegateQueue:socketQueue:error:]
 ___87+[GCDAsyncSocket socketFromConnectedSocketFD:delegate:delegateQueue:socketQueue:error:]_block_invoke
-___copy_helper_block_.141
-___destroy_helper_block_.142
+___copy_helper_block_.143
+___destroy_helper_block_.144
 -[GCDAsyncSocket delegate]
 ___26-[GCDAsyncSocket delegate]_block_invoke
-___copy_helper_block_.144
-___destroy_helper_block_.145
+___copy_helper_block_.146
+___destroy_helper_block_.147
 -[GCDAsyncSocket setDelegate:synchronously:]
 ___44-[GCDAsyncSocket setDelegate:synchronously:]_block_invoke
-___copy_helper_block_.147
-___destroy_helper_block_.148
+___copy_helper_block_.149
+___destroy_helper_block_.150
 -[GCDAsyncSocket setDelegate:]
 -[GCDAsyncSocket synchronouslySetDelegate:]
 -[GCDAsyncSocket delegateQueue]
 ___31-[GCDAsyncSocket delegateQueue]_block_invoke
-___copy_helper_block_.152
-___destroy_helper_block_.153
+___copy_helper_block_.154
+___destroy_helper_block_.155
 -[GCDAsyncSocket setDelegateQueue:synchronously:]
 ___49-[GCDAsyncSocket setDelegateQueue:synchronously:]_block_invoke
+___copy_helper_block_.157
+___destroy_helper_block_.158
 -[GCDAsyncSocket setDelegateQueue:]
 -[GCDAsyncSocket synchronouslySetDelegateQueue:]
 -[GCDAsyncSocket getDelegate:delegateQueue:]
 ___44-[GCDAsyncSocket getDelegate:delegateQueue:]_block_invoke
+___copy_helper_block_.162
+___destroy_helper_block_.163
 -[GCDAsyncSocket setDelegate:delegateQueue:synchronously:]
 ___58-[GCDAsyncSocket setDelegate:delegateQueue:synchronously:]_block_invoke
-___copy_helper_block_.163
-___destroy_helper_block_.164
 -[GCDAsyncSocket setDelegate:delegateQueue:]
 -[GCDAsyncSocket synchronouslySetDelegate:delegateQueue:]
 -[GCDAsyncSocket isIPv4Enabled]
 ___31-[GCDAsyncSocket isIPv4Enabled]_block_invoke
-___copy_helper_block_.168
-___destroy_helper_block_.169
+___copy_helper_block_.170
+___destroy_helper_block_.171
 -[GCDAsyncSocket setIPv4Enabled:]
 ___33-[GCDAsyncSocket setIPv4Enabled:]_block_invoke
-___copy_helper_block_.171
-___destroy_helper_block_.172
+___copy_helper_block_.173
+___destroy_helper_block_.174
 -[GCDAsyncSocket isIPv6Enabled]
 ___31-[GCDAsyncSocket isIPv6Enabled]_block_invoke
-___copy_helper_block_.174
-___destroy_helper_block_.175
+___copy_helper_block_.176
+___destroy_helper_block_.177
 -[GCDAsyncSocket setIPv6Enabled:]
 ___33-[GCDAsyncSocket setIPv6Enabled:]_block_invoke
-___copy_helper_block_.177
-___destroy_helper_block_.178
+___copy_helper_block_.179
+___destroy_helper_block_.180
 -[GCDAsyncSocket isIPv4PreferredOverIPv6]
 ___41-[GCDAsyncSocket isIPv4PreferredOverIPv6]_block_invoke
-___copy_helper_block_.180
-___destroy_helper_block_.181
+___copy_helper_block_.182
+___destroy_helper_block_.183
 -[GCDAsyncSocket setIPv4PreferredOverIPv6:]
 ___43-[GCDAsyncSocket setIPv4PreferredOverIPv6:]_block_invoke
-___copy_helper_block_.183
-___destroy_helper_block_.184
+___copy_helper_block_.185
+___destroy_helper_block_.186
 -[GCDAsyncSocket alternateAddressDelay]
 ___39-[GCDAsyncSocket alternateAddressDelay]_block_invoke
-___copy_helper_block_.186
-___destroy_helper_block_.187
+___copy_helper_block_.188
+___destroy_helper_block_.189
 -[GCDAsyncSocket setAlternateAddressDelay:]
 ___43-[GCDAsyncSocket setAlternateAddressDelay:]_block_invoke
-___copy_helper_block_.189
-___destroy_helper_block_.190
+___copy_helper_block_.191
+___destroy_helper_block_.192
 -[GCDAsyncSocket userData]
 ___26-[GCDAsyncSocket userData]_block_invoke
-___copy_helper_block_.192
-___destroy_helper_block_.193
+___copy_helper_block_.194
+___destroy_helper_block_.195
 -[GCDAsyncSocket setUserData:]
 ___30-[GCDAsyncSocket setUserData:]_block_invoke
-___copy_helper_block_.195
-___destroy_helper_block_.196
+___copy_helper_block_.197
+___destroy_helper_block_.198
 -[GCDAsyncSocket acceptOnPort:error:]
 -[GCDAsyncSocket acceptOnInterface:port:error:]
 ___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke
-___copy_helper_block_.212
-___destroy_helper_block_.213
-___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.216
+___copy_helper_block_.214
+___destroy_helper_block_.215
+___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.218
 ___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke_2
-___copy_helper_block_.245
-___destroy_helper_block_.246
-___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.248
-___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke_2.251
-___copy_helper_block_.252
-___destroy_helper_block_.253
-___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.255
-___copy_helper_block_.258
-___destroy_helper_block_.259
+___copy_helper_block_.247
+___destroy_helper_block_.248
+___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.250
+___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke_2.253
+___copy_helper_block_.254
+___destroy_helper_block_.255
+___47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.257
+___copy_helper_block_.260
+___destroy_helper_block_.261
 -[GCDAsyncSocket acceptOnUrl:error:]
 ___36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke
-___copy_helper_block_.261
-___destroy_helper_block_.262
-___36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke.264
+___36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke.266
 ___36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke_2
-___copy_helper_block_.282
-___destroy_helper_block_.283
-___36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke.285
+___36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke.287
+___copy_helper_block_.290
+___destroy_helper_block_.291
 -[GCDAsyncSocket doAccept:]
 ___27-[GCDAsyncSocket doAccept:]_block_invoke
 ___27-[GCDAsyncSocket doAccept:]_block_invoke_2
-___copy_helper_block_.300
-___destroy_helper_block_.301
-___copy_helper_block_.305
-___destroy_helper_block_.306
+___copy_helper_block_.302
+___destroy_helper_block_.303
+___copy_helper_block_.307
+___destroy_helper_block_.308
 -[GCDAsyncSocket preConnectWithInterface:error:]
 -[GCDAsyncSocket preConnectWithUrl:error:]
 -[GCDAsyncSocket connectToHost:onPort:error:]
@@ -896,25 +896,21 @@ ___destroy_helper_block_.306
 ___70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke
 ___70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke_2
 ___70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke_3
-___copy_helper_block_.326
-___destroy_helper_block_.327
-___70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke.335
-___copy_helper_block_.338
-___destroy_helper_block_.339
-___copy_helper_block_.341
-___destroy_helper_block_.342
-___copy_helper_block_.346
-___destroy_helper_block_.347
+___copy_helper_block_.328
+___destroy_helper_block_.329
+___70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke.337
+___copy_helper_block_.340
+___destroy_helper_block_.341
+___copy_helper_block_.343
+___destroy_helper_block_.344
+___copy_helper_block_.348
+___destroy_helper_block_.349
 -[GCDAsyncSocket connectToAddress:error:]
 -[GCDAsyncSocket connectToAddress:withTimeout:error:]
 -[GCDAsyncSocket connectToAddress:viaInterface:withTimeout:error:]
 ___66-[GCDAsyncSocket connectToAddress:viaInterface:withTimeout:error:]_block_invoke
-___copy_helper_block_.359
-___destroy_helper_block_.360
 -[GCDAsyncSocket connectToUrl:withTimeout:error:]
 ___49-[GCDAsyncSocket connectToUrl:withTimeout:error:]_block_invoke
-___copy_helper_block_.368
-___destroy_helper_block_.369
 -[GCDAsyncSocket lookup:didSucceedWithAddress4:address6:]
 -[GCDAsyncSocket lookup:didFail:]
 -[GCDAsyncSocket bindSocket:toInterface:error:]
@@ -922,62 +918,68 @@ ___destroy_helper_block_.369
 -[GCDAsyncSocket connectSocket:address:stateIndex:]
 ___51-[GCDAsyncSocket connectSocket:address:stateIndex:]_block_invoke
 ___51-[GCDAsyncSocket connectSocket:address:stateIndex:]_block_invoke_2
-___copy_helper_block_.395
-___destroy_helper_block_.396
-___copy_helper_block_.398
-___destroy_helper_block_.399
+___copy_helper_block_.403
+___destroy_helper_block_.404
 -[GCDAsyncSocket closeSocket:]
 -[GCDAsyncSocket closeUnusedSocket:]
 -[GCDAsyncSocket connectWithAddress4:address6:error:]
 ___53-[GCDAsyncSocket connectWithAddress4:address6:error:]_block_invoke
-___copy_helper_block_.405
-___destroy_helper_block_.406
+___copy_helper_block_.410
+___destroy_helper_block_.411
 -[GCDAsyncSocket connectWithAddressUN:error:]
 ___45-[GCDAsyncSocket connectWithAddressUN:error:]_block_invoke
 ___45-[GCDAsyncSocket connectWithAddressUN:error:]_block_invoke_2
-___copy_helper_block_.408
-___destroy_helper_block_.409
-___45-[GCDAsyncSocket connectWithAddressUN:error:]_block_invoke.412
 ___copy_helper_block_.413
 ___destroy_helper_block_.414
+___45-[GCDAsyncSocket connectWithAddressUN:error:]_block_invoke.417
+___copy_helper_block_.418
+___destroy_helper_block_.419
+___copy_helper_block_.421
+___destroy_helper_block_.422
 -[GCDAsyncSocket didConnect:]
 ___29-[GCDAsyncSocket didConnect:]_block_invoke
-___29-[GCDAsyncSocket didConnect:]_block_invoke.430
-___29-[GCDAsyncSocket didConnect:]_block_invoke.448
+___copy_helper_block_.432
+___destroy_helper_block_.433
+___29-[GCDAsyncSocket didConnect:]_block_invoke.435
+___copy_helper_block_.442
+___destroy_helper_block_.443
+___29-[GCDAsyncSocket didConnect:]_block_invoke.453
 ___29-[GCDAsyncSocket didConnect:]_block_invoke_2
-___copy_helper_block_.449
-___destroy_helper_block_.450
-___copy_helper_block_.452
-___destroy_helper_block_.453
-___29-[GCDAsyncSocket didConnect:]_block_invoke.457
-___29-[GCDAsyncSocket didConnect:]_block_invoke_2.458
-___copy_helper_block_.459
-___destroy_helper_block_.460
-___copy_helper_block_.462
-___destroy_helper_block_.463
+___copy_helper_block_.454
+___destroy_helper_block_.455
+___copy_helper_block_.457
+___destroy_helper_block_.458
+___29-[GCDAsyncSocket didConnect:]_block_invoke.462
+___29-[GCDAsyncSocket didConnect:]_block_invoke_2.463
+___copy_helper_block_.464
+___destroy_helper_block_.465
+___copy_helper_block_.467
+___destroy_helper_block_.468
 -[GCDAsyncSocket didNotConnect:error:]
 -[GCDAsyncSocket startConnectTimeout:]
 ___38-[GCDAsyncSocket startConnectTimeout:]_block_invoke
-___copy_helper_block_.471
-___destroy_helper_block_.472
+___copy_helper_block_.476
+___destroy_helper_block_.477
 -[GCDAsyncSocket endConnectTimeout]
 -[GCDAsyncSocket doConnectTimeout]
 -[GCDAsyncSocket closeWithError:]
 ___33-[GCDAsyncSocket closeWithError:]_block_invoke
-___copy_helper_block_.491
-___destroy_helper_block_.492
+___copy_helper_block_.496
+___destroy_helper_block_.497
 -[GCDAsyncSocket disconnect]
 ___28-[GCDAsyncSocket disconnect]_block_invoke
--[GCDAsyncSocket disconnectAfterReading]
-___40-[GCDAsyncSocket disconnectAfterReading]_block_invoke
 ___copy_helper_block_.499
 ___destroy_helper_block_.500
+-[GCDAsyncSocket disconnectAfterReading]
+___40-[GCDAsyncSocket disconnectAfterReading]_block_invoke
+___copy_helper_block_.504
+___destroy_helper_block_.505
 -[GCDAsyncSocket disconnectAfterWriting]
 ___40-[GCDAsyncSocket disconnectAfterWriting]_block_invoke
+___copy_helper_block_.507
+___destroy_helper_block_.508
 -[GCDAsyncSocket disconnectAfterReadingAndWriting]
 ___50-[GCDAsyncSocket disconnectAfterReadingAndWriting]_block_invoke
-___copy_helper_block_.505
-___destroy_helper_block_.506
 -[GCDAsyncSocket maybeClose]
 -[GCDAsyncSocket badConfigError:]
 -[GCDAsyncSocket badParamError:]
@@ -993,32 +995,28 @@ ___destroy_helper_block_.506
 -[GCDAsyncSocket otherError:]
 -[GCDAsyncSocket isDisconnected]
 ___32-[GCDAsyncSocket isDisconnected]_block_invoke
-___copy_helper_block_.543
-___destroy_helper_block_.544
+___copy_helper_block_.548
+___destroy_helper_block_.549
 -[GCDAsyncSocket isConnected]
 ___29-[GCDAsyncSocket isConnected]_block_invoke
-___copy_helper_block_.546
-___destroy_helper_block_.547
+___copy_helper_block_.551
+___destroy_helper_block_.552
 -[GCDAsyncSocket connectedHost]
 ___31-[GCDAsyncSocket connectedHost]_block_invoke
-___copy_helper_block_.553
-___destroy_helper_block_.554
 -[GCDAsyncSocket connectedPort]
 ___31-[GCDAsyncSocket connectedPort]_block_invoke
-___copy_helper_block_.560
-___destroy_helper_block_.561
--[GCDAsyncSocket connectedUrl]
-___30-[GCDAsyncSocket connectedUrl]_block_invoke
 ___copy_helper_block_.565
 ___destroy_helper_block_.566
+-[GCDAsyncSocket connectedUrl]
+___30-[GCDAsyncSocket connectedUrl]_block_invoke
+___copy_helper_block_.570
+___destroy_helper_block_.571
 -[GCDAsyncSocket localHost]
 ___27-[GCDAsyncSocket localHost]_block_invoke
-___copy_helper_block_.572
-___destroy_helper_block_.573
 -[GCDAsyncSocket localPort]
 ___27-[GCDAsyncSocket localPort]_block_invoke
-___copy_helper_block_.579
-___destroy_helper_block_.580
+___copy_helper_block_.584
+___destroy_helper_block_.585
 -[GCDAsyncSocket connectedHost4]
 -[GCDAsyncSocket connectedHost6]
 -[GCDAsyncSocket connectedPort4]
@@ -1038,39 +1036,33 @@ ___destroy_helper_block_.580
 -[GCDAsyncSocket localPortFromSocket6:]
 -[GCDAsyncSocket connectedAddress]
 ___34-[GCDAsyncSocket connectedAddress]_block_invoke
-___copy_helper_block_.594
-___destroy_helper_block_.595
+___copy_helper_block_.599
+___destroy_helper_block_.600
 -[GCDAsyncSocket localAddress]
 ___30-[GCDAsyncSocket localAddress]_block_invoke
-___copy_helper_block_.597
-___destroy_helper_block_.598
+___copy_helper_block_.602
+___destroy_helper_block_.603
 -[GCDAsyncSocket isIPv4]
 ___24-[GCDAsyncSocket isIPv4]_block_invoke
-___copy_helper_block_.600
-___destroy_helper_block_.601
+___copy_helper_block_.605
+___destroy_helper_block_.606
 -[GCDAsyncSocket isIPv6]
 ___24-[GCDAsyncSocket isIPv6]_block_invoke
-___copy_helper_block_.603
-___destroy_helper_block_.604
 -[GCDAsyncSocket isSecure]
 ___26-[GCDAsyncSocket isSecure]_block_invoke
-___copy_helper_block_.606
-___destroy_helper_block_.607
+___copy_helper_block_.611
+___destroy_helper_block_.612
 -[GCDAsyncSocket getInterfaceAddress4:address6:fromDescription:port:]
 -[GCDAsyncSocket getInterfaceAddressFromUrl:]
 -[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]
 ___66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke
-___copy_helper_block_.625
-___destroy_helper_block_.626
-___66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.628
-___copy_helper_block_.631
-___destroy_helper_block_.632
-___66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.634
-___copy_helper_block_.635
-___destroy_helper_block_.636
-___66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.638
-___copy_helper_block_.639
-___destroy_helper_block_.640
+___66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.633
+___copy_helper_block_.636
+___destroy_helper_block_.637
+___66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.639
+___66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.643
+___copy_helper_block_.644
+___destroy_helper_block_.645
 -[GCDAsyncSocket usingCFStreamForTLS]
 -[GCDAsyncSocket usingSecureTransportForTLS]
 -[GCDAsyncSocket suspendReadSource]
@@ -1081,89 +1073,89 @@ ___destroy_helper_block_.640
 -[GCDAsyncSocket readDataWithTimeout:buffer:bufferOffset:tag:]
 -[GCDAsyncSocket readDataWithTimeout:buffer:bufferOffset:maxLength:tag:]
 ___72-[GCDAsyncSocket readDataWithTimeout:buffer:bufferOffset:maxLength:tag:]_block_invoke
-___copy_helper_block_.648
-___destroy_helper_block_.649
+___copy_helper_block_.653
+___destroy_helper_block_.654
 -[GCDAsyncSocket readDataToLength:withTimeout:tag:]
 -[GCDAsyncSocket readDataToLength:withTimeout:buffer:bufferOffset:tag:]
 ___71-[GCDAsyncSocket readDataToLength:withTimeout:buffer:bufferOffset:tag:]_block_invoke
-___copy_helper_block_.653
-___destroy_helper_block_.654
 -[GCDAsyncSocket readDataToData:withTimeout:tag:]
 -[GCDAsyncSocket readDataToData:withTimeout:buffer:bufferOffset:tag:]
 -[GCDAsyncSocket readDataToData:withTimeout:maxLength:tag:]
 -[GCDAsyncSocket readDataToData:withTimeout:buffer:bufferOffset:maxLength:tag:]
 ___79-[GCDAsyncSocket readDataToData:withTimeout:buffer:bufferOffset:maxLength:tag:]_block_invoke
--[GCDAsyncSocket progressOfReadReturningTag:bytesDone:total:]
-___61-[GCDAsyncSocket progressOfReadReturningTag:bytesDone:total:]_block_invoke
 ___copy_helper_block_.663
 ___destroy_helper_block_.664
+-[GCDAsyncSocket progressOfReadReturningTag:bytesDone:total:]
+___61-[GCDAsyncSocket progressOfReadReturningTag:bytesDone:total:]_block_invoke
+___copy_helper_block_.668
+___destroy_helper_block_.669
 -[GCDAsyncSocket maybeDequeueRead]
 -[GCDAsyncSocket flushSSLBuffers]
 ___33-[GCDAsyncSocket flushSSLBuffers]_block_invoke
-___copy_helper_block_.680
-___destroy_helper_block_.681
+___copy_helper_block_.685
+___destroy_helper_block_.686
 -[GCDAsyncSocket doReadData]
 ___28-[GCDAsyncSocket doReadData]_block_invoke
-___copy_helper_block_.706
-___destroy_helper_block_.707
--[GCDAsyncSocket doReadEOF]
-___27-[GCDAsyncSocket doReadEOF]_block_invoke
 ___copy_helper_block_.711
 ___destroy_helper_block_.712
+-[GCDAsyncSocket doReadEOF]
+___27-[GCDAsyncSocket doReadEOF]_block_invoke
+___copy_helper_block_.716
+___destroy_helper_block_.717
 -[GCDAsyncSocket completeCurrentRead]
 ___37-[GCDAsyncSocket completeCurrentRead]_block_invoke
-___copy_helper_block_.722
-___destroy_helper_block_.723
+___copy_helper_block_.727
+___destroy_helper_block_.728
 -[GCDAsyncSocket endCurrentRead]
 -[GCDAsyncSocket setupReadTimerWithTimeout:]
 ___44-[GCDAsyncSocket setupReadTimerWithTimeout:]_block_invoke
-___copy_helper_block_.727
-___destroy_helper_block_.728
+___copy_helper_block_.732
+___destroy_helper_block_.733
 -[GCDAsyncSocket doReadTimeout]
 ___31-[GCDAsyncSocket doReadTimeout]_block_invoke
 ___31-[GCDAsyncSocket doReadTimeout]_block_invoke_2
-___copy_helper_block_.734
-___destroy_helper_block_.735
-___copy_helper_block_.737
-___destroy_helper_block_.738
+___copy_helper_block_.739
+___destroy_helper_block_.740
+___copy_helper_block_.742
+___destroy_helper_block_.743
 -[GCDAsyncSocket doReadTimeoutWithExtension:]
 -[GCDAsyncSocket writeData:withTimeout:tag:]
 ___44-[GCDAsyncSocket writeData:withTimeout:tag:]_block_invoke
-___copy_helper_block_.744
-___destroy_helper_block_.745
+___copy_helper_block_.749
+___destroy_helper_block_.750
 -[GCDAsyncSocket progressOfWriteReturningTag:bytesDone:total:]
 ___62-[GCDAsyncSocket progressOfWriteReturningTag:bytesDone:total:]_block_invoke
-___copy_helper_block_.747
-___destroy_helper_block_.748
+___copy_helper_block_.752
+___destroy_helper_block_.753
 -[GCDAsyncSocket maybeDequeueWrite]
 -[GCDAsyncSocket doWriteData]
 ___29-[GCDAsyncSocket doWriteData]_block_invoke
-___copy_helper_block_.758
-___destroy_helper_block_.759
-___29-[GCDAsyncSocket doWriteData]_block_invoke.763
-___copy_helper_block_.764
-___destroy_helper_block_.765
--[GCDAsyncSocket completeCurrentWrite]
-___38-[GCDAsyncSocket completeCurrentWrite]_block_invoke
+___copy_helper_block_.763
+___destroy_helper_block_.764
+___29-[GCDAsyncSocket doWriteData]_block_invoke.768
 ___copy_helper_block_.769
 ___destroy_helper_block_.770
+-[GCDAsyncSocket completeCurrentWrite]
+___38-[GCDAsyncSocket completeCurrentWrite]_block_invoke
+___copy_helper_block_.774
+___destroy_helper_block_.775
 -[GCDAsyncSocket endCurrentWrite]
 -[GCDAsyncSocket setupWriteTimerWithTimeout:]
 ___45-[GCDAsyncSocket setupWriteTimerWithTimeout:]_block_invoke
-___copy_helper_block_.774
-___destroy_helper_block_.775
+___copy_helper_block_.779
+___destroy_helper_block_.780
 -[GCDAsyncSocket doWriteTimeout]
 ___32-[GCDAsyncSocket doWriteTimeout]_block_invoke
 ___32-[GCDAsyncSocket doWriteTimeout]_block_invoke_2
-___copy_helper_block_.781
-___destroy_helper_block_.782
-___copy_helper_block_.784
-___destroy_helper_block_.785
+___copy_helper_block_.786
+___destroy_helper_block_.787
+___copy_helper_block_.789
+___destroy_helper_block_.790
 -[GCDAsyncSocket doWriteTimeoutWithExtension:]
 -[GCDAsyncSocket startTLS:]
 ___27-[GCDAsyncSocket startTLS:]_block_invoke
-___copy_helper_block_.792
-___destroy_helper_block_.793
+___copy_helper_block_.797
+___destroy_helper_block_.798
 -[GCDAsyncSocket maybeStartTLS]
 -[GCDAsyncSocket sslReadWithBuffer:length:]
 -[GCDAsyncSocket sslWriteWithBuffer:length:]
@@ -1172,34 +1164,34 @@ _SSLReadFunction
 _SSLWriteFunction
 -[GCDAsyncSocket ssl_continueSSLHandshake]
 ___42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke
-___copy_helper_block_.865
-___destroy_helper_block_.866
-___42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke.868
+___copy_helper_block_.870
+___destroy_helper_block_.871
+___42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke.873
 ___42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke_2
-___copy_helper_block_.871
-___destroy_helper_block_.872
-___copy_helper_block_.874
-___destroy_helper_block_.875
-___42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke.880
-___copy_helper_block_.881
-___destroy_helper_block_.882
+___copy_helper_block_.876
+___destroy_helper_block_.877
+___copy_helper_block_.879
+___destroy_helper_block_.880
+___42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke.885
+___copy_helper_block_.886
+___destroy_helper_block_.887
 -[GCDAsyncSocket ssl_shouldTrustPeer:stateIndex:]
 -[GCDAsyncSocket cf_finishSSLHandshake]
 ___39-[GCDAsyncSocket cf_finishSSLHandshake]_block_invoke
-___copy_helper_block_.886
-___destroy_helper_block_.887
+___copy_helper_block_.891
+___destroy_helper_block_.892
 -[GCDAsyncSocket cf_abortSSLHandshake:]
 -[GCDAsyncSocket cf_startTLS]
 +[GCDAsyncSocket ignore:]
 +[GCDAsyncSocket startCFStreamThreadIfNeeded]
 ___45+[GCDAsyncSocket startCFStreamThreadIfNeeded]_block_invoke
 ___45+[GCDAsyncSocket startCFStreamThreadIfNeeded]_block_invoke_2
-___copy_helper_block_.906
-___destroy_helper_block_.907
+___copy_helper_block_.911
+___destroy_helper_block_.912
 +[GCDAsyncSocket stopCFStreamThreadIfNeeded]
 ___44+[GCDAsyncSocket stopCFStreamThreadIfNeeded]_block_invoke
-___copy_helper_block_.919
-___destroy_helper_block_.920
+___copy_helper_block_.924
+___destroy_helper_block_.925
 +[GCDAsyncSocket cfstreamThread]
 +[GCDAsyncSocket scheduleCFStreams:]
 +[GCDAsyncSocket unscheduleCFStreams:]
@@ -1207,21 +1199,21 @@ ___destroy_helper_block_.920
 -[GCDAsyncSocket registerForStreamCallbacksIncludingReadWrite:]
 -[GCDAsyncSocket addStreamsToRunLoop]
 ___37-[GCDAsyncSocket addStreamsToRunLoop]_block_invoke
-___copy_helper_block_.946
-___destroy_helper_block_.947
--[GCDAsyncSocket removeStreamsFromRunLoop]
-___42-[GCDAsyncSocket removeStreamsFromRunLoop]_block_invoke
 ___copy_helper_block_.951
 ___destroy_helper_block_.952
+-[GCDAsyncSocket removeStreamsFromRunLoop]
+___42-[GCDAsyncSocket removeStreamsFromRunLoop]_block_invoke
+___copy_helper_block_.956
+___destroy_helper_block_.957
 -[GCDAsyncSocket openStreams]
 -[GCDAsyncSocket autoDisconnectOnClosedReadStream]
 ___50-[GCDAsyncSocket autoDisconnectOnClosedReadStream]_block_invoke
-___copy_helper_block_.956
-___destroy_helper_block_.957
+___copy_helper_block_.961
+___destroy_helper_block_.962
 -[GCDAsyncSocket setAutoDisconnectOnClosedReadStream:]
 ___54-[GCDAsyncSocket setAutoDisconnectOnClosedReadStream:]_block_invoke
-___copy_helper_block_.959
-___destroy_helper_block_.960
+___copy_helper_block_.964
+___destroy_helper_block_.965
 -[GCDAsyncSocket markSocketQueueTargetQueue:]
 -[GCDAsyncSocket unmarkSocketQueueTargetQueue:]
 -[GCDAsyncSocket performBlock:]
@@ -1251,16 +1243,16 @@ ___destroy_helper_block_.960
 +[GCDAsyncSocket LFData]
 +[GCDAsyncSocket ZeroData]
 -[GCDAsyncSocket .cxx_destruct]
-___copy_helper_block_.1207
-___destroy_helper_block_.1208
-___CFReadStreamCallback_block_invoke.1210
 ___copy_helper_block_.1212
 ___destroy_helper_block_.1213
-___copy_helper_block_.1215
-___destroy_helper_block_.1216
-___CFWriteStreamCallback_block_invoke.1218
-___copy_helper_block_.1219
-___destroy_helper_block_.1220
+___CFReadStreamCallback_block_invoke.1215
+___copy_helper_block_.1217
+___destroy_helper_block_.1218
+___copy_helper_block_.1220
+___destroy_helper_block_.1221
+___CFWriteStreamCallback_block_invoke.1223
+___copy_helper_block_.1224
+___destroy_helper_block_.1225
 _OBJC_IVAR_$_GCDAsyncSocket.delegate
 _OBJC_IVAR_$_GCDAsyncSocket.delegateQueue
 _OBJC_IVAR_$_GCDAsyncSocket.socket4FD
@@ -1277,57 +1269,59 @@ _OBJC_IVAR_$_GCDAsyncSocket.currentWrite
 _OBJC_IVAR_$_GCDAsyncSocket.preBuffer
 _OBJC_IVAR_$_GCDAsyncSocket.alternateAddressDelay
 _OBJC_IVAR_$_GCDAsyncSocket.flags
-___block_descriptor_tmp.143
-___block_descriptor_tmp.146
-___block_descriptor_tmp.149
-___block_descriptor_tmp.154
-___block_descriptor_tmp.165
+___block_descriptor_tmp.145
+___block_descriptor_tmp.148
+___block_descriptor_tmp.151
+___block_descriptor_tmp.156
+___block_descriptor_tmp.159
+___block_descriptor_tmp.164
 _OBJC_IVAR_$_GCDAsyncSocket.config
-___block_descriptor_tmp.170
-___block_descriptor_tmp.173
-___block_descriptor_tmp.176
-___block_descriptor_tmp.179
-___block_descriptor_tmp.182
-___block_descriptor_tmp.185
-___block_descriptor_tmp.188
-___block_descriptor_tmp.191
+___block_descriptor_tmp.172
+___block_descriptor_tmp.175
+___block_descriptor_tmp.178
+___block_descriptor_tmp.181
+___block_descriptor_tmp.184
+___block_descriptor_tmp.187
+___block_descriptor_tmp.190
+___block_descriptor_tmp.193
 _OBJC_IVAR_$_GCDAsyncSocket.userData
-___block_descriptor_tmp.194
-___block_descriptor_tmp.197
-___block_descriptor_tmp.215
+___block_descriptor_tmp.196
+___block_descriptor_tmp.199
+___block_descriptor_tmp.217
 _OBJC_IVAR_$_GCDAsyncSocket.accept4Source
-___block_descriptor_tmp.247
-___block_descriptor_tmp.250
+___block_descriptor_tmp.249
+___block_descriptor_tmp.252
 _OBJC_IVAR_$_GCDAsyncSocket.accept6Source
-___block_descriptor_tmp.254
-___block_descriptor_tmp.257
-___block_descriptor_tmp.260
-___block_descriptor_tmp.263
+___block_descriptor_tmp.256
+___block_descriptor_tmp.259
+___block_descriptor_tmp.262
 _OBJC_IVAR_$_GCDAsyncSocket.acceptUNSource
-___block_descriptor_tmp.284
-___block_descriptor_tmp.287
-___block_descriptor_tmp.302
-___block_descriptor_tmp.307
+___block_descriptor_tmp.289
+___block_descriptor_tmp.292
+___block_descriptor_tmp.304
+___block_descriptor_tmp.309
 _OBJC_IVAR_$_GCDAsyncSocket.connectInterface4
 _OBJC_IVAR_$_GCDAsyncSocket.connectInterface6
 _OBJC_IVAR_$_GCDAsyncSocket.connectInterfaceUN
-___block_descriptor_tmp.328
-___block_descriptor_tmp.340
-___block_descriptor_tmp.343
-___block_descriptor_tmp.348
-___block_descriptor_tmp.361
-___block_descriptor_tmp.370
-___block_descriptor_tmp.397
-___block_descriptor_tmp.400
-___block_descriptor_tmp.407
-___block_descriptor_tmp.410
+___block_descriptor_tmp.330
+___block_descriptor_tmp.342
+___block_descriptor_tmp.345
+___block_descriptor_tmp.351
+___block_descriptor_tmp.365
+___block_descriptor_tmp.375
+___block_descriptor_tmp.405
+___block_descriptor_tmp.412
 ___block_descriptor_tmp.415
-___block_descriptor_tmp.451
-___block_descriptor_tmp.454
-___block_descriptor_tmp.461
-___block_descriptor_tmp.464
+___block_descriptor_tmp.420
+___block_descriptor_tmp.423
+___block_descriptor_tmp.434
+___block_descriptor_tmp.444
+___block_descriptor_tmp.456
+___block_descriptor_tmp.459
+___block_descriptor_tmp.466
+___block_descriptor_tmp.469
 _OBJC_IVAR_$_GCDAsyncSocket.connectTimer
-___block_descriptor_tmp.473
+___block_descriptor_tmp.478
 _OBJC_IVAR_$_GCDAsyncSocket.readStream
 _OBJC_IVAR_$_GCDAsyncSocket.writeStream
 _OBJC_IVAR_$_GCDAsyncSocket.sslPreBuffer
@@ -1338,72 +1332,67 @@ _OBJC_IVAR_$_GCDAsyncSocket.readSource
 _OBJC_IVAR_$_GCDAsyncSocket.writeSource
 _OBJC_IVAR_$_GCDAsyncSocket.socketFDBytesAvailable
 _OBJC_IVAR_$_GCDAsyncSocket.sslWriteCachedLength
-___block_descriptor_tmp.493
-___block_descriptor_tmp.496
+___block_descriptor_tmp.498
 ___block_descriptor_tmp.501
-___block_descriptor_tmp.507
-___block_descriptor_tmp.545
-___block_descriptor_tmp.548
-___block_descriptor_tmp.555
-___block_descriptor_tmp.562
+___block_descriptor_tmp.506
+___block_descriptor_tmp.509
+___block_descriptor_tmp.550
+___block_descriptor_tmp.553
 ___block_descriptor_tmp.567
-___block_descriptor_tmp.574
-___block_descriptor_tmp.581
-___block_descriptor_tmp.596
-___block_descriptor_tmp.599
-___block_descriptor_tmp.602
-___block_descriptor_tmp.605
-___block_descriptor_tmp.608
-___block_descriptor_tmp.627
-___block_descriptor_tmp.633
-___block_descriptor_tmp.637
-___block_descriptor_tmp.641
-___block_descriptor_tmp.650
+___block_descriptor_tmp.572
+___block_descriptor_tmp.586
+___block_descriptor_tmp.601
+___block_descriptor_tmp.604
+___block_descriptor_tmp.607
+___block_descriptor_tmp.613
+___block_descriptor_tmp.638
+___block_descriptor_tmp.646
 ___block_descriptor_tmp.655
 ___block_descriptor_tmp.665
-___block_descriptor_tmp.682
-___block_descriptor_tmp.708
+___block_descriptor_tmp.670
+___block_descriptor_tmp.687
 ___block_descriptor_tmp.713
-___block_descriptor_tmp.724
-_OBJC_IVAR_$_GCDAsyncSocket.readTimer
+___block_descriptor_tmp.718
 ___block_descriptor_tmp.729
-___block_descriptor_tmp.736
-___block_descriptor_tmp.739
-___block_descriptor_tmp.746
-___block_descriptor_tmp.749
-___block_descriptor_tmp.760
-___block_descriptor_tmp.766
+_OBJC_IVAR_$_GCDAsyncSocket.readTimer
+___block_descriptor_tmp.734
+___block_descriptor_tmp.741
+___block_descriptor_tmp.744
+___block_descriptor_tmp.751
+___block_descriptor_tmp.754
+___block_descriptor_tmp.765
 ___block_descriptor_tmp.771
-_OBJC_IVAR_$_GCDAsyncSocket.writeTimer
 ___block_descriptor_tmp.776
-___block_descriptor_tmp.783
-___block_descriptor_tmp.786
-___block_descriptor_tmp.794
-___block_descriptor_tmp.867
-___block_descriptor_tmp.873
-___block_descriptor_tmp.877
-___block_descriptor_tmp.883
+_OBJC_IVAR_$_GCDAsyncSocket.writeTimer
+___block_descriptor_tmp.781
+___block_descriptor_tmp.788
+___block_descriptor_tmp.791
+___block_descriptor_tmp.799
+___block_descriptor_tmp.872
+___block_descriptor_tmp.878
+___block_descriptor_tmp.882
 ___block_descriptor_tmp.888
+___block_descriptor_tmp.893
 _startCFStreamThreadIfNeeded.predicate
-___block_descriptor_tmp.897
+___block_descriptor_tmp.902
 ___block_literal_global
 _cfstreamThreadRetainCount
 _cfstreamThreadSetupQueue
 _cfstreamThread
-___block_descriptor_tmp.909
-___block_descriptor_tmp.922
+___block_descriptor_tmp.914
+___block_descriptor_tmp.927
 _OBJC_IVAR_$_GCDAsyncSocket.streamContext
-___block_descriptor_tmp.948
 ___block_descriptor_tmp.953
 ___block_descriptor_tmp.958
-___block_descriptor_tmp.961
-___block_descriptor_tmp.1209
+___block_descriptor_tmp.963
+___block_descriptor_tmp.966
 ___block_descriptor_tmp.1214
-___block_descriptor_tmp.1217
-___block_descriptor_tmp.1221
+___block_descriptor_tmp.1219
+___block_descriptor_tmp.1222
+___block_descriptor_tmp.1226
 /Users/jackie/repos/TittleDemoApp/TittleFramework/CocoaAsyncSocket/GCDAsyncSocket.m
-__CFWriteStreamCallback_block_invoke.1218
-__CFReadStreamCallback_block_invoke.1210
+__CFWriteStreamCallback_block_invoke.1223
+__CFReadStreamCallback_block_invoke.1215
 __54-[GCDAsyncSocket setAutoDisconnectOnClosedReadStream:]_block_invoke
 __50-[GCDAsyncSocket autoDisconnectOnClosedReadStream]_block_invoke
 __42-[GCDAsyncSocket removeStreamsFromRunLoop]_block_invoke
@@ -1412,9 +1401,9 @@ __44+[GCDAsyncSocket stopCFStreamThreadIfNeeded]_block_invoke
 __45+[GCDAsyncSocket startCFStreamThreadIfNeeded]_block_invoke_2
 __45+[GCDAsyncSocket startCFStreamThreadIfNeeded]_block_invoke
 __39-[GCDAsyncSocket cf_finishSSLHandshake]_block_invoke
-__42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke.880
+__42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke.885
 __42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke_2
-__42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke.868
+__42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke.873
 __42-[GCDAsyncSocket ssl_continueSSLHandshake]_block_invoke
 SSLWriteFunction
 SSLReadFunction
@@ -1423,7 +1412,7 @@ __32-[GCDAsyncSocket doWriteTimeout]_block_invoke_2
 __32-[GCDAsyncSocket doWriteTimeout]_block_invoke
 __45-[GCDAsyncSocket setupWriteTimerWithTimeout:]_block_invoke
 __38-[GCDAsyncSocket completeCurrentWrite]_block_invoke
-__29-[GCDAsyncSocket doWriteData]_block_invoke.763
+__29-[GCDAsyncSocket doWriteData]_block_invoke.768
 __29-[GCDAsyncSocket doWriteData]_block_invoke
 __62-[GCDAsyncSocket progressOfWriteReturningTag:bytesDone:total:]_block_invoke
 __44-[GCDAsyncSocket writeData:withTimeout:tag:]_block_invoke
@@ -1438,9 +1427,9 @@ __61-[GCDAsyncSocket progressOfReadReturningTag:bytesDone:total:]_block_invoke
 __79-[GCDAsyncSocket readDataToData:withTimeout:buffer:bufferOffset:maxLength:tag:]_block_invoke
 __71-[GCDAsyncSocket readDataToLength:withTimeout:buffer:bufferOffset:tag:]_block_invoke
 __72-[GCDAsyncSocket readDataWithTimeout:buffer:bufferOffset:maxLength:tag:]_block_invoke
-__66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.638
-__66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.634
-__66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.628
+__66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.643
+__66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.639
+__66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke.633
 __66-[GCDAsyncSocket setupReadAndWriteSourcesForNewlyConnectedSocket:]_block_invoke
 __26-[GCDAsyncSocket isSecure]_block_invoke
 __24-[GCDAsyncSocket isIPv6]_block_invoke
@@ -1460,13 +1449,13 @@ __40-[GCDAsyncSocket disconnectAfterReading]_block_invoke
 __28-[GCDAsyncSocket disconnect]_block_invoke
 __33-[GCDAsyncSocket closeWithError:]_block_invoke
 __38-[GCDAsyncSocket startConnectTimeout:]_block_invoke
-__29-[GCDAsyncSocket didConnect:]_block_invoke_2.458
-__29-[GCDAsyncSocket didConnect:]_block_invoke.457
+__29-[GCDAsyncSocket didConnect:]_block_invoke_2.463
+__29-[GCDAsyncSocket didConnect:]_block_invoke.462
 __29-[GCDAsyncSocket didConnect:]_block_invoke_2
-__29-[GCDAsyncSocket didConnect:]_block_invoke.448
-__29-[GCDAsyncSocket didConnect:]_block_invoke.430
+__29-[GCDAsyncSocket didConnect:]_block_invoke.453
+__29-[GCDAsyncSocket didConnect:]_block_invoke.435
 __29-[GCDAsyncSocket didConnect:]_block_invoke
-__45-[GCDAsyncSocket connectWithAddressUN:error:]_block_invoke.412
+__45-[GCDAsyncSocket connectWithAddressUN:error:]_block_invoke.417
 __45-[GCDAsyncSocket connectWithAddressUN:error:]_block_invoke_2
 __45-[GCDAsyncSocket connectWithAddressUN:error:]_block_invoke
 __53-[GCDAsyncSocket connectWithAddress4:address6:error:]_block_invoke
@@ -1474,21 +1463,21 @@ __51-[GCDAsyncSocket connectSocket:address:stateIndex:]_block_invoke_2
 __51-[GCDAsyncSocket connectSocket:address:stateIndex:]_block_invoke
 __49-[GCDAsyncSocket connectToUrl:withTimeout:error:]_block_invoke
 __66-[GCDAsyncSocket connectToAddress:viaInterface:withTimeout:error:]_block_invoke
-__70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke.335
+__70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke.337
 __70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke_3
 __70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke_2
 __70-[GCDAsyncSocket connectToHost:onPort:viaInterface:withTimeout:error:]_block_invoke
 __27-[GCDAsyncSocket doAccept:]_block_invoke_2
 __27-[GCDAsyncSocket doAccept:]_block_invoke
-__36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke.285
+__36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke.287
 __36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke_2
-__36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke.264
+__36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke.266
 __36-[GCDAsyncSocket acceptOnUrl:error:]_block_invoke
-__47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.255
-__47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke_2.251
-__47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.248
+__47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.257
+__47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke_2.253
+__47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.250
 __47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke_2
-__47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.216
+__47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke.218
 __47-[GCDAsyncSocket acceptOnInterface:port:error:]_block_invoke
 __30-[GCDAsyncSocket setUserData:]_block_invoke
 __26-[GCDAsyncSocket userData]_block_invoke
@@ -1533,7 +1522,7 @@ ___77-[TittleLightControl udpSocket:didReceiveData:fromAddress:withFilterContext
 -[TittleLightControl tittleExistInList:]
 -[TittleLightControl getTittleObjFromData:]
 -[TittleLightControl removeSockInPool:]
--[TittleLightControl setLightModeWithR:G:B:intensity:]
+-[TittleLightControl lightModeWithR:g:b:intensity:]
 -[TittleLightControl standardConfig:password:]
 -[TittleLightControl verifyStandardConfig]
 -[TittleLightControl confirmStandardConfig:]
@@ -1577,8 +1566,6 @@ l_OBJC_PROTOCOL_$_GCDAsyncUdpSocketDelegate
 l_OBJC_LABEL_PROTOCOL_$_GCDAsyncUdpSocketDelegate
 /Users/jackie/repos/TittleDemoApp/TittleFramework/TittleLightControl.m
 /Users/jackie/repos/TittleDemoApp/TittleFramework/TittleLightControl.h
-NSMakeRange
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __77-[TittleLightControl udpSocket:didReceiveData:fromAddress:withFilterContext:]_block_invoke
 __49-[TittleLightControl socket:didReadData:withTag:]_block_invoke
 __48-[TittleLightControl socket:didAcceptNewSocket:]_block_invoke
