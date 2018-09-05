@@ -303,7 +303,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Search Tittles" id="yah-6g-gzT">
                         <barButtonItem key="backBarButtonItem" title="Search" id="sm8-RI-o4S"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="wqq-gX-dHy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wqq-gX-dHy">
                             <connections>
                                 <segue destination="o1Y-WL-l2G" kind="show" id="lpu-c3-nEb"/>
                             </connections>
@@ -445,9 +445,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsV-2q-UYV">
                                 <rect key="frame" x="20" y="108" width="335" height="203"/>
-                                <mutableString key="text">Tittle will play different colors based on its status, When tittle blinks in purple, it means that it has been connected to the network successfully.   Please wait when you see the purple light. 
+                                <string key="text">Tittle will play different colors based on its status, When tittle blinks in purple, it means that it has been connected to the network successfully.   Please wait when you see the purple light. 
 
-If you never see the purple light, pleasse go back and double check your wifi name and password</mutableString>
+If you never see the purple light, pleasse go back and double check your wifi name and password</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
