@@ -236,7 +236,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="532"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tittleCell" rowHeight="61" id="EKu-Kq-6Hw" customClass="TittleListCellTableViewCell" customModule="TittleDemoApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tittleCell" rowHeight="61" id="EKu-Kq-6Hw" customClass="TittleListCellTableViewCell" customModule="TittleDemoApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EKu-Kq-6Hw" id="Iar-sa-cTE">
@@ -335,7 +335,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89G-sJ-pdD">
                                                 <rect key="frame" x="20" y="20" width="335" height="365.33333333333331"/>
-                                                <mutableString key="text">You need to do the following steps  Step 1. Press and hold the power button for 5 seconds until your tittle blinks in white color then release.  Step 2. Press and hold again the power button for 3 seconds until your tittle blinks in yellow.  Step 3. Please go to the wifi setting in your phone and connect a network called "Tittle-AP".  Step 4. Please input the name and the password of the wifi network that you would like Tittle to connect with and press "Connect"</mutableString>
+                                                <string key="text">You need to do the following steps  Step 1. Press and hold the power button for 5 seconds until your tittle blinks in white color then release.  Step 2. Press and hold again the power button for 3 seconds until your tittle blinks in yellow.  Step 3. Please go to the wifi setting in your phone and connect a network called "Tittle-AP".  Step 4. Please input the name and the password of the wifi network that you would like Tittle to connect with and press "Connect"</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -371,12 +371,24 @@
                                                     <action selector="connectButtonPressed:" destination="o1Y-WL-l2G" eventType="touchUpInside" id="bUj-oX-XAj"/>
                                                 </connections>
                                             </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTu-dl-BeR">
+                                                <rect key="frame" x="20" y="575.33333333333337" width="335" height="40"/>
+                                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="N4q-mP-B4e"/>
+                                                </constraints>
+                                                <state key="normal" title="Verify">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="i3V-S2-Q2e" firstAttribute="leading" secondItem="5Z3-xe-cTB" secondAttribute="leading" constant="20" id="2Gb-xp-Euh"/>
                                             <constraint firstAttribute="trailing" secondItem="i3V-S2-Q2e" secondAttribute="trailing" constant="20" id="5oG-LO-gpT"/>
                                             <constraint firstItem="89G-sJ-pdD" firstAttribute="leading" secondItem="5Z3-xe-cTB" secondAttribute="leading" constant="20" id="7Li-uV-oTZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="CTu-dl-BeR" secondAttribute="trailing" constant="20" id="9DR-lq-xga"/>
+                                            <constraint firstItem="CTu-dl-BeR" firstAttribute="leading" secondItem="5Z3-xe-cTB" secondAttribute="leading" constant="20" id="Awf-uN-Pd5"/>
                                             <constraint firstItem="jCN-JG-HtK" firstAttribute="top" secondItem="noj-zz-dhr" secondAttribute="bottom" constant="10" id="CMw-RB-swK"/>
                                             <constraint firstItem="noj-zz-dhr" firstAttribute="leading" secondItem="5Z3-xe-cTB" secondAttribute="leading" constant="20" id="Fue-yl-hQh"/>
                                             <constraint firstItem="fJa-aY-DKa" firstAttribute="leading" secondItem="5Z3-xe-cTB" secondAttribute="leading" constant="20" id="J02-8z-ESB"/>
@@ -384,6 +396,7 @@
                                             <constraint firstItem="i3V-S2-Q2e" firstAttribute="top" secondItem="fJa-aY-DKa" secondAttribute="bottom" constant="20" id="KOp-7y-KrY"/>
                                             <constraint firstAttribute="trailing" secondItem="fJa-aY-DKa" secondAttribute="trailing" constant="20" id="Kj6-9W-KjO"/>
                                             <constraint firstAttribute="trailing" secondItem="89G-sJ-pdD" secondAttribute="trailing" constant="20" id="Mfu-hC-7zN"/>
+                                            <constraint firstItem="CTu-dl-BeR" firstAttribute="top" secondItem="jCN-JG-HtK" secondAttribute="bottom" constant="20" id="Si4-QY-Qdn"/>
                                             <constraint firstItem="noj-zz-dhr" firstAttribute="top" secondItem="i3V-S2-Q2e" secondAttribute="bottom" constant="20" id="UlW-Fg-36K"/>
                                             <constraint firstAttribute="trailing" secondItem="jCN-JG-HtK" secondAttribute="trailing" constant="20" id="nsp-fp-86B"/>
                                             <constraint firstItem="fJa-aY-DKa" firstAttribute="top" secondItem="89G-sJ-pdD" secondAttribute="bottom" constant="20" id="rVS-no-FCi"/>
@@ -415,11 +428,86 @@
                         <outlet property="passwordTextField" destination="i3V-S2-Q2e" id="JgU-YD-b6l"/>
                         <outlet property="statusLabel" destination="noj-zz-dhr" id="Kea-Ch-3cK"/>
                         <outlet property="wifiNameTextField" destination="fJa-aY-DKa" id="H3q-ga-9kg"/>
+                        <segue destination="cGw-Li-bbk" kind="show" identifier="ToVerifyConfigPage" id="XN0-XY-g9O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Iv-ca-FqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-823.20000000000005" y="905.3973013493254"/>
+        </scene>
+        <!--Verify Standard Config View Controller-->
+        <scene sceneID="hdy-tK-RsA">
+            <objects>
+                <viewController id="cGw-Li-bbk" customClass="VerifyStandardConfigViewController" customModule="TittleDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8vX-QC-KCw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsV-2q-UYV">
+                                <rect key="frame" x="20" y="108" width="335" height="203"/>
+                                <mutableString key="text">Tittle will play different colors based on its status, When tittle blinks in purple, it means that it has been connected to the network successfully.   Please wait when you see the purple light. 
+
+If you never see the purple light, pleasse go back and double check your wifi name and password</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCM-lH-OLg">
+                                <rect key="frame" x="20" y="511.66666666666674" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tDm-YR-ANp"/>
+                                </constraints>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="cGw-Li-bbk" eventType="touchUpInside" id="CiP-J0-1FH"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSM-3W-xid">
+                                <rect key="frame" x="20" y="331" width="335" height="150.66666666666663"/>
+                                <string key="text">*Standard Config Verified-  
+ Please go to the wifi settings in your phone and connect to the network that your Tittle has connected to, once it's done please press "Confirm" to continue.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending Data, please wait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSL-Fk-Lfj">
+                                <rect key="frame" x="20" y="561.66666666666663" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oSL-Fk-Lfj" firstAttribute="leading" secondItem="Ndh-i9-Ymc" secondAttribute="leading" constant="20" id="0pM-Oo-6pS"/>
+                            <constraint firstItem="zCM-lH-OLg" firstAttribute="top" secondItem="hSM-3W-xid" secondAttribute="bottom" constant="30" id="C7o-bb-QVu"/>
+                            <constraint firstItem="FsV-2q-UYV" firstAttribute="top" secondItem="Ndh-i9-Ymc" secondAttribute="top" constant="20" id="DtJ-rs-ybs"/>
+                            <constraint firstItem="hSM-3W-xid" firstAttribute="leading" secondItem="Ndh-i9-Ymc" secondAttribute="leading" constant="20" id="EG5-lh-N55"/>
+                            <constraint firstItem="FsV-2q-UYV" firstAttribute="leading" secondItem="Ndh-i9-Ymc" secondAttribute="leading" constant="20" id="FlX-PJ-6DY"/>
+                            <constraint firstItem="Ndh-i9-Ymc" firstAttribute="trailing" secondItem="hSM-3W-xid" secondAttribute="trailing" constant="20" id="Hw8-Nn-IDQ"/>
+                            <constraint firstItem="Ndh-i9-Ymc" firstAttribute="trailing" secondItem="FsV-2q-UYV" secondAttribute="trailing" constant="20" id="Kib-Qg-INF"/>
+                            <constraint firstItem="Ndh-i9-Ymc" firstAttribute="trailing" secondItem="zCM-lH-OLg" secondAttribute="trailing" constant="20" id="WdG-IW-QcY"/>
+                            <constraint firstItem="oSL-Fk-Lfj" firstAttribute="top" secondItem="zCM-lH-OLg" secondAttribute="bottom" constant="10" id="ZBV-2d-weZ"/>
+                            <constraint firstItem="zCM-lH-OLg" firstAttribute="leading" secondItem="Ndh-i9-Ymc" secondAttribute="leading" constant="20" id="eks-bL-dib"/>
+                            <constraint firstItem="hSM-3W-xid" firstAttribute="top" secondItem="FsV-2q-UYV" secondAttribute="bottom" constant="20" id="g6i-nn-4aI"/>
+                            <constraint firstItem="Ndh-i9-Ymc" firstAttribute="trailing" secondItem="oSL-Fk-Lfj" secondAttribute="trailing" constant="20" id="qsX-bU-L50"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ndh-i9-Ymc"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="zCM-lH-OLg" id="F05-2d-2z9"/>
+                        <outlet property="confirmHintLabel" destination="hSM-3W-xid" id="4id-K4-jGa"/>
+                        <outlet property="statusLabel" destination="oSL-Fk-Lfj" id="UfP-Oc-XRy"/>
+                        <segue destination="Y4Y-Lm-rWZ" kind="unwind" identifier="unwindToSearchPage" unwindAction="unwindToSearchPageWithSegue:" id="A2j-L2-85B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qB6-yC-xeq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Y4Y-Lm-rWZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="905"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Leo-ub-VKf">

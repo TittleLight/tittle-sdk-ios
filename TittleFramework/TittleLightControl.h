@@ -21,6 +21,9 @@
 - (void) socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port;
 - (void) socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err;
 - (void) didReceivedResponsedFromLightMode: (int)ackCode;
+- (void) didReceivedResponsedFromStandardConfigMode: (int)ackCode;
+- (void) standardConfigVerified: (TittleData *)tittle;
+- (void) standardConfigDone: (int)ackCode;
 @end
 
 @interface TittleLightControl : NSObject
@@ -33,10 +36,18 @@
 @property (strong, nonatomic) NSNetService *socketService;
 @property (strong, nonatomic) NSTimer *onloadTimer;
 @property (strong, nonatomic) NSMutableArray *foundTittles;
+@property (strong, nonatomic) NSMutableArray *connectedSockets;
+
+@property (assign, nonatomic) int currentMode;
+@property (strong, nonatomic) TittleData *theConfigTittle;
 
 - (void) setLightModeWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity;
 - (void) connectTittleWithIP: (NSString *)ip;
 - (void) disconnectTittle;
 - (void) startSearchingTittles;
 - (void) stopSearchingTittles;
+- (void) standardConfig: (NSString *)wifiName password: (NSString *)password;
+- (void) connectTittleForStandardConfig;
+- (void) verifyStandardConfig;
+- (void) confirmStandardConfig: (NSString *)ip;
 @end

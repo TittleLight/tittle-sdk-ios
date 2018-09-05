@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "constants.h"
+#import "Utils.h"
 
 @interface ByteDataCreator : NSObject
 
 + (NSData *)lightCommandWithR: (int)r G:(int)g B:(int)b intensity: (int)intensity;
-
 + (NSData *)broadcastIPCommand:(NSString *)ip;
++ (NSData *)standardConfigWifiDataCommand: (NSString *)wifiName password: (NSString *)password;
++ (NSData *)standardConfigDoneCommand;
 @end

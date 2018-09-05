@@ -81,6 +81,8 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
+    @IBAction func unwindToSearchPage(segue:UIStoryboardSegue) { }
+    
     /*
      // MARK: - button actions
      */

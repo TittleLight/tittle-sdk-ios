@@ -25,6 +25,7 @@
 		8C170747213E3F31004D52C0 /* TittleData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C170745213E3F31004D52C0 /* TittleData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C170748213E3F31004D52C0 /* TittleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C170746213E3F31004D52C0 /* TittleData.m */; };
 		8C17074A213E722A004D52C0 /* StandardConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C170749213E722A004D52C0 /* StandardConfigViewController.swift */; };
+		8C170750213E8BE8004D52C0 /* VerifyStandardConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17074F213E8BE8004D52C0 /* VerifyStandardConfigViewController.swift */; };
 		8C7D0525213D0AF9008F581E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D0521213D0AF9008F581E /* GCDAsyncSocket.m */; };
 		8C7D0526213D0AF9008F581E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D0522213D0AF9008F581E /* GCDAsyncUdpSocket.m */; };
 		8C7D0527213D0AF9008F581E /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D0523213D0AF9008F581E /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,6 +90,7 @@
 		8C170745213E3F31004D52C0 /* TittleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TittleData.h; sourceTree = "<group>"; };
 		8C170746213E3F31004D52C0 /* TittleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TittleData.m; sourceTree = "<group>"; };
 		8C170749213E722A004D52C0 /* StandardConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardConfigViewController.swift; sourceTree = "<group>"; };
+		8C17074F213E8BE8004D52C0 /* VerifyStandardConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyStandardConfigViewController.swift; sourceTree = "<group>"; };
 		8C7D0521213D0AF9008F581E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		8C7D0522213D0AF9008F581E /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		8C7D0523213D0AF9008F581E /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				8C7D0535213D27A3008F581E /* SearchTittleViewController.swift */,
 				8C7D0537213D2A30008F581E /* TittleListCellTableViewCell.swift */,
 				8C170749213E722A004D52C0 /* StandardConfigViewController.swift */,
+				8C17074F213E8BE8004D52C0 /* VerifyStandardConfigViewController.swift */,
 			);
 			path = TittleDemoApp;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C170750213E8BE8004D52C0 /* VerifyStandardConfigViewController.swift in Sources */,
 				8C7D0536213D27A3008F581E /* SearchTittleViewController.swift in Sources */,
 				8C17074A213E722A004D52C0 /* StandardConfigViewController.swift in Sources */,
 				8CC706A42137E31900C59FEA /* FunctionsTableViewController.swift in Sources */,

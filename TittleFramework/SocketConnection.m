@@ -38,7 +38,6 @@
 
 - (void)writeData:(NSData *) data withTag:(long)tag withController:(id)controller {
     
-    
     float timeTaken = [[NSDate date] timeIntervalSinceDate: socketCreateDate];
     if (timeTaken > 5.0f) {
         [socket disconnect];

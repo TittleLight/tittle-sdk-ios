@@ -112,6 +112,7 @@ class FunctionsTableViewController: UITableViewController, TittleLightControlDel
     func didReceivedResponsed(fromLightMode ackCode: Int32) {
         if (ackCode != TITTLE_ACK_SUCCESS) {
             DispatchQueue.main.async{
+                //resend
                 self.setLightMode(isOn: true)
                 self.statusLabel.text = "Re-sending data to Tittle"
             }
