@@ -38,12 +38,12 @@
 
 - (void)writeData:(NSData *) data withTag:(long)tag withController:(id)controller {
     
-    float timeTaken = [[NSDate date] timeIntervalSinceDate: socketCreateDate];
-    if (timeTaken > 5.0f) {
-        [socket disconnect];
-        socket = nil;
-        [self connect:controller ip: connectIP port: connectPort];
-    }
+//    float timeTaken = [[NSDate date] timeIntervalSinceDate: socketCreateDate];
+//    if (timeTaken > 5.0f) {
+//        [socket disconnect];
+//        socket = nil;
+//        [self connect:controller ip: connectIP port: connectPort];
+//    }
     
     [socket writeData:data withTimeout:-1 tag:tag];
     [socket readDataWithTimeout:-1 tag:tag];

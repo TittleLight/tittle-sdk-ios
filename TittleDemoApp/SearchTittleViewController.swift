@@ -39,6 +39,7 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
+        tittleLightCtrl.stopSearchingTittles()
     }
     
     
@@ -93,6 +94,8 @@ class SearchTittleViewController: UIViewController, UITableViewDelegate, UITable
             isSearching = false
             searchButton.setTitle("Start Search", for: .normal)
         }else {
+            tittles = [];
+            tittleListTableView.reloadData()
             tittleLightCtrl.startSearchingTittles()
             isSearching = true
             searchButton.setTitle("Stop Search", for: .normal)

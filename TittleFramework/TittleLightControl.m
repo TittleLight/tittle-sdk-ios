@@ -43,8 +43,11 @@
 - (void) stopSearchingTittles {
     [_onloadTimer invalidate];
     [self.socketListener disconnect];
+    self.socketListener = nil;
     [self.socketService stop];
     self.socketService = nil;
+    self.foundTittles = nil;
+    self.connectedSockets = nil;
 }
 
 
@@ -147,6 +150,7 @@
                 }
             }
         }
+        [sock disconnect];
         [self removeSockInPool:sock];
         return;
     }
@@ -156,6 +160,7 @@
         if (self.theConfigTittle != NULL) {
             [self.delegate standardConfigVerified: self.theConfigTittle];
         }
+        [sock disconnect];
         [self removeSockInPool:sock];
         return;
     }
@@ -278,6 +283,9 @@
 - (void) confirmStandardConfig: (NSString *)ip {
     if (_socketService != nil) {
         [self.socketListener disconnect];
+        self.socketListener = nil;
+        self.connectedSockets = nil;
+        [self.socketService stop];
     }
     [self connectTittleWithIP: ip];
     [self.socketConnection writeData:[ByteDataCreator standardConfigDoneCommand] withTag:TITTLE_COMMAND_DONE_STANDARD_CONFIG withController:self];
