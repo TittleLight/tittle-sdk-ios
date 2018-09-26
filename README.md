@@ -9,7 +9,7 @@
 ## Overview
 
 	This is the firt vesion of the Tittle Light Framework.
-	The purpose of this framework is ......
+	Tittle SDK allows you to set up, search and control Tittle lights.
 
 This frmamework is using [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) for socket connections. Check it out if you want to know more.
 
@@ -35,7 +35,7 @@ That is it! You can now use this Framework to connect your TittleLight!
 
 ## Functions
 
-	Description about this section
+	This framework currently has the following functions:
 
 1. [Connect](#connect)
 2. [Disconnect](#disconnect)
