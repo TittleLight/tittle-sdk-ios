@@ -37,9 +37,9 @@ That is it! You can now use this Framework to connect your TittleLight!
 
 1. [Connect](#connect)
 2. [Disconnect](#disconnect)
-3. [Set Light Mode](#lightmode)
-4. [Standard Config](#standardconfig)
-5. [Search Tittles](#searchtittles)
+3. [Set Light Mode](#set-light-mode)
+4. [Standard Config](#standard-config)
+5. [Search Tittles](#search-tittles)
 
 
 
@@ -80,7 +80,7 @@ That is it! You can now use this Framework to connect your TittleLight!
 	       tittleLightCtrl.disconnectTittle()
 	    }
 
-<span id="lightmode"></span>
+<span id="set-light-mode"></span>
 ### Set Light Mode
 
 Function to set the Tittle Light as light mode with color and intensity.
@@ -105,7 +105,7 @@ Function to set the Tittle Light as light mode with color and intensity.
 
 
 
-<span id="standardconfig"></span>
+<span id="standard-config"></span>
 ### Standard Config
 
 Tittle Light support Smart Config or standard config for wifi configuration. This Framework now only support Standard Config.
@@ -196,7 +196,7 @@ Tittle Light support Smart Config or standard config for wifi configuration. Thi
 
 > At this point, the process of Standard config is completed
 
-<span id="searchtittles"></span>
+<span id="search-tittles"></span>
 ### Search Tittles
 
 If there are Tittles connected to your wifi, you can find them out.
