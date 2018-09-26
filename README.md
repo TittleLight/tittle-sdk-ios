@@ -19,13 +19,11 @@ This frmamework is using [CocoaAsyncSocket](https://github.com/robbiehanson/Coco
 
 - Simply drag the "TittleFramework.framework" to your poject in Xcode:
 
-![alt text][drag_to_your_project]
-[drag_to_your_project]: https://github.com/clarityhk/tittle-sdk-samples/blob/master/assets/ios/drag_to_your_project.png
+![drag_to_your_project](https://github.com/clarityhk/tittle-sdk-samples/blob/master/assets/ios/drag_to_your_project.png)
 
 - In your app `TARGETS` -> your project -> `Build Phases`, add this `TittleFramework` in `Link Binary With Libraries` and `Embed Frameworks`
 
-![alt text][link_library]
-[link_library]: https://github.com/clarityhk/tittle-sdk-samples/blob/master/assets/ios/link_library.png
+![link_library](https://github.com/clarityhk/tittle-sdk-samples/blob/master/assets/ios/link_library.png)
 
 - import the Framework to the place you want to use it.
 
